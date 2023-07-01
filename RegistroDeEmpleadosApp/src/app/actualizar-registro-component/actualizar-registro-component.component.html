@@ -1,0 +1,14 @@
+<div class="container col-md-5 p-5" style="text-align: center;">
+    <h1 class="m-3">{{titulo}}</h1>
+    <input type="text" class="form-control m-1" placeholder="Nombres"  [(ngModel)]="nombresEntrada">
+    <input type="text" class="form-control m-1" placeholder="Apellidos" [(ngModel)]="apellidosEntrada">
+    <input type="text" class="form-control m-1" placeholder="Cargo" [(ngModel)]="cargoEntrada">
+    <input type="number" class="form-control m-1" [(ngModel)]="salarioEntrada">
+    <button class="btn btn-primary m-2" (click)="AccionDelBoton()">{{textoDelBoton}}</button>
+    <!-- <input type="submit" value="Actualizar registro" class="btn btn-primary m-2" (click)="ActualizarEmpleado()">   -->
+    <!-- <input type="submit" value="Eliminar registro" class="btn btn-primary m-2" (click)="EliminarEmpleado()"> -->
+</div>
+<div class="container col-md-5 p-5" style="text-align: center;">
+    <p>actualizar-registro-component works!</p>
+    <button class="btn btn-primary m-2" (click)="VolverAHome()">Volver a home</button>
+</div>

@@ -1,0 +1,20 @@
+<div style="text-align: center;">
+    <h1>{{titulo}}</h1>
+    <form>
+        <input type="text" name="nombre" placeholder="Nombre" [(ngModel)]="nombreUsuario"><br/>
+        <input type="text" name="apellido" placeholder="Apellido" [(ngModel)]="apellidoUsuario"><br/><br/>
+        <input type="text" name="cargo" placeholder="cargo" [(ngModel)]="cargo"><br/><br/>
+        <input type="submit" name="registrar" (click)="RegistrarUsuario()"><br/>
+    </form>
+    <br/>
+    <br/>
+    <p *ngIf="registrado; else sinRegistrar">{{mensaje}} con el nombre de: {{nombreUsuario}} {{apellidoUsuario}} y riene el cargo de <span [ngClass]="{paraDirectores: cargo=='director' }">{{cargo}}</span> </p>
+    <ng-template #sinRegistrar>
+        <p>No hay nadie registrado</p>
+    </ng-template>
+    <br/>
+    <br/>
+    <ul>
+        <li *ngFor="let entrada of entradas">{{entrada.titulo}}</li>
+    </ul>
+</div>

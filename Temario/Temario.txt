@@ -1,0 +1,15 @@
+¿Qué es Angular?
+Instalación
+Creación de la primera aplicación
+Estructura de aplicación
+Creación de componentes
+Binding
+Directivas de utilidad
+Forms
+Comunicación
+Routing
+http y autentificación
+Despliegue de aplicaciones
+
+Requisitos mínimos: conocimiento básico-medio de JavaScript.
+Requisitos deseados: conocimiento medio-avanzado de JavaScript.

@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="jumbotron">
+    <h1>{{title}}</h1>
+  </div>
+  
+</div>
+
+
+<div class="container">
+  <form>
+    Numero 1: <input type="number" [(ngModel)]="numero1" name="numero1">
+    <br/>
+    <br/>
+    Numero 2: <input type="number" [(ngModel)]="numero2" name="numero2">
+    <br/>
+    <br/>
+    <input type="submit" value="sumar" (click)="Sumar()" class="btn btn-primary"> <input type="submit" value="restar" (click)="Restar()" class="btn btn-info">
+    <br/>
+    <br/>
+  </form>
+</div>
+
+<div class="container">
+  <p>Resultado: {{resultado}}</p>
+</div>

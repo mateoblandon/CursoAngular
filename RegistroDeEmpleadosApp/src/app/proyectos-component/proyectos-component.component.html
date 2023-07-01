@@ -1,0 +1,14 @@
+<div class="container col-md-5 p-5" style="text-align: center;">
+    <p>proyectos-component works!</p>
+    <button class="btn btn-primary m-2" (click)="VolverAHome()">Volver a home</button>
+</div>
+<div class="container col-md-5 p-5" style="text-align: center;">
+    <h1 class="m-3">{{titulo}}</h1>
+    <input type="text" class="form-control m-1" placeholder="Nombres"  [(ngModel)]="nombresEntrada">
+    <input type="text" class="form-control m-1" placeholder="Apellidos" [(ngModel)]="apellidosEntrada">
+    <input type="text" class="form-control m-1" placeholder="Cargo" [(ngModel)]="cargoEntrada">
+    <input type="number" class="form-control m-1" [(ngModel)]="salarioEntrada">
+    <input type="submit" value="Insertar" class="btn btn-primary m-2" (click)="AgregarNuevoEmpleado()"> 
+</div>
+
+<app-empleado-hijo *ngFor="let empleado of empleados; let i=index" class="container col-md-5" style="text-align: center;" [empleadoDeLaLista]="empleado" [indice]="i"></app-empleado-hijo>
